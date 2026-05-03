@@ -1,0 +1,117 @@
+/* style.css */
+
+/* --- General Body & Font Styles --- */
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+/* --- Main Game Container --- */
+.wrapper {
+    width: 90%;
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 1px solid #333;
+}
+
+h1 {
+    color: #fdd835; /* Bright yellow for the title */
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* --- Form & Input Styles --- */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between form elements */
+    margin: 25px 0;
+}
+
+#guess {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.guessfield {
+    width: 120px;
+    padding: 12px;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid #444;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.guessfield:focus {
+    border-color: #fdd835; /* Highlight on focus */
+}
+
+#submit {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #fdd835;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #ffeb3b; /* Lighter yellow on hover */
+}
+
+/* --- Results Display --- */
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    margin: 8px 0;
+}
+
+.guesses {
+    background-color: #333;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.lastResult {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fdd835;
+}
+
+.lowOrHi {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 1.5em; /* Prevents layout shift when text appears */
+    color: #ff5252; /* Red for hints */
+}
